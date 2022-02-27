@@ -1,106 +1,101 @@
-.city-input{
+.city-input {
+  margin-top: 68.55px;
+  @include for-normal-layout {
+    margin-left: 0;
+    width: 380px;
+  }
+  @include for-wide-layout {
+    margin-left: 34px;
+    width: 480px;
+  }
+  .fintek {
+    width: 98px;
+    height: 43.34px;
+    margin-bottom: 78.11px;
+  }
 
-    margin-top: 68.55px;
-    @include for-normal-layout{
-        margin-left: 0;
-width: 380px;
-
+  .app-opening {
+    margin: 0 0 50px 49px;
+    @include for-normal-layout {
+      margin: 0 0 50px 29px;
     }
-    @include for-wide-layout{
-        margin-left: 34px;
-width: 480px;
 
+    @include for-wide-layout {
+      margin: 0 0 50px 49px;
     }
-    .fintek{
-        width: 98px;
-        height: 43.34px;
-        margin-bottom: 78.11px;
-    }
-    
-    .app-opening{
-        margin: 0 0 50px 49px;
-        @include for-normal-layout{
-            margin: 0 0 50px 29px;
-        }
+    width: 271px;
+    height: 132px;
+    font-size: 1.874rem;
+    line-height: 44px;
+    text-align: left;
+    color: $clr3;
+  }
 
-        @include for-wide-layout{
-            margin: 0 0 50px 49px;
-        }
+  .user-input-form {
+    margin-left: 49px;
+    @include for-narrow-layout {
+      margin-left: 49px;
+    }
+    @include for-normal-layout {
+      margin-left: 29px;
+    }
+
+    @include for-wide-layout {
+      margin-left: 49px;
+    }
+    label {
+      font-size: 1rem;
+      font: 16px/22px;
+      color: $clr3;
+      margin: 0 0 7px 2px;
+    }
+    .input-btn-container {
+      position: relative;
+      background-color: $clr1;
+      border-radius: 10px;
+      @include for-mobile-layout {
+        margin-bottom: 50px;
         width: 271px;
-        height: 132px;
-        font-size: 1.874rem;
-        line-height: 44px;
-        text-align: left;
-        color: $clr3;
+      }
+
+      @include for-narrow-layout {
+        margin-bottom: 50px;
+        width: 320px;
+      }
+
+      @include for-normal-layout {
+        margin-bottom: 199px;
+      }
+      @include for-wide-layout {
+        width: 431px;
+      }
+
+      input {
+        color: $clr4;
+        padding: 16px 0;
+        height: 63px;
+        border-radius: 10px;
+        border: none;
+        line-height: 2rem;
+        font-family: heebo-regular;
+        font-size: 1.375rem;
+        padding: 16px 0px 15px 12px;
+        width: 100%;
+      }
+      button {
+        border-radius: 10px;
+        border: none;
+        height: 36px;
+        width: 95px;
+        align-self: center;
+        background-color: $clr5;
+        color: $clr1;
+        font-size: 1.125rem;
+        line-height: 27px;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+      }
     }
-
-    .user-input-form{
-            margin-left:49px;
-        @include for-narrow-layout{
-            margin-left:49px;
-        }
-        @include for-normal-layout{
-            margin-left:29px;
-        }
-
-        @include for-wide-layout{
-            margin-left:49px;
-        }
-        label{
-            font-size: 1rem;
-            font: 16px/22px ;
-            color: $clr3;
-            margin: 0 0 7px 2px;
-        }
-        .input-btn-container{
-            position: relative;
-            background-color: $clr1;
-            border-radius: 10px;
-            @include for-mobile-layout{
-                margin-bottom: 50px;
-                width: 271px;
-            }
-
-            @include for-narrow-layout{
-                margin-bottom: 50px;
-                width: 320px;
-            }
-    
-            @include for-normal-layout{
-                margin-bottom: 199px;
-            }
-                @include for-wide-layout{
-                    width: 431px;
-                    }
-
-                    
-            input{
-            color: $clr4;
-            padding: 16px 0 ;
-            height: 63px;
-            border-radius: 10px;
-            border: none;
-            line-height: 2rem;
-            font-family: heebo-regular;
-            font-size: 1.375rem;
-            padding: 16px 0px 15px 12px;
-            width: 100%;
-        }
-        button{
-            border-radius: 10px;
-            border: none;
-            height: 36px;
-            width: 95px;
-            align-self: center;
-            background-color: $clr5 ;
-            color: $clr1;
-            font-size: 1.125rem;
-            line-height: 27px;
-            position: absolute;
-            top: 14px;
-            right: 14px;
-        }
-    }
-    }
+  }
 }
-

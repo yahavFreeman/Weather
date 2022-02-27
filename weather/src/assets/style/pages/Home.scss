@@ -1,27 +1,25 @@
-.home{
-    @include for-mobile-layout{
-        flex-direction: column;
-    }
-    @include for-narrow-layout{
-        flex-direction: column;
-    }
-    @include for-narrow-normal-layout{
-        flex-direction: column;
-        margin: 0 auto 0 auto;
+.home {
+  @include for-mobile-layout {
+    flex-direction: column;
+  }
+  @include for-narrow-layout {
+    flex-direction: column;
+  }
+  @include for-narrow-normal-layout {
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+  }
 
-    }
+  @include for-normal-layout {
+    gap: 10px;
+    flex-direction: row;
+  }
 
-    @include for-normal-layout{
-        gap: 10px;
-        flex-direction: row;
-    }
+  @include for-normal-wide-layout {
+    gap: 30px;
+  }
 
-    @include for-normal-wide-layout {
-        gap: 50px;
-    }
-
-    @include for-wide-layout{
-        gap: 109px;
-    }
-    
+  @include for-wide-layout {
+    gap: 109px;
+  }
 }

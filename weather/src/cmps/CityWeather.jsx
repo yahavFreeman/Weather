@@ -53,12 +53,11 @@ export default function CityWeather(weather) {
             className="hourly-temp-container"
             key={Number(hour.time.slice(11, 13))}
           >
-              <p className="hour">{hour.time.slice(11)}</p>
-              <div className="small-celsius-container">
+            <p className="hour">{hour.time.slice(11)}</p>
+            <div className="small-celsius-container">
               <p className="hourly-temp">{Math.round(hour.temp_c)}</p>
               <div className="celsius-small"></div>
-              </div>
-
+            </div>
           </div>
         ))}
       </section>
