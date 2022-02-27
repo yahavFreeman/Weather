@@ -1,0 +1,16 @@
+// SETUP
+@import "setup/variables";
+@import "setup/mixins";
+@import "setup/typography";
+
+// BASICS
+@import "./basic/base";
+@import "./basic/layout";
+
+// COMPONENTS
+@import "./cmps/CityWeather.scss";
+@import "./cmps/UserInput.scss";
+@import "./cmps/CityLocation.scss";
+
+//PAGES
+@import"./pages/Home.scss"

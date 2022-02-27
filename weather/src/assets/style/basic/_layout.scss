@@ -1,0 +1,52 @@
+.main-layout {
+  display: grid;
+  grid-template-columns: $layoutPadding 1fr $layoutPadding;
+  > * {
+    grid-column: 2;
+  }
+  > *.full {
+    grid-column: 1 / -1;
+  }
+  @include for-narrow-layout {
+    @include layoutGTC($break-narrow);
+  }
+
+  @include for-narrow-normal-layout {
+    @include layoutGTC($break-narrow-normal);
+  }
+
+  @include for-normal-layout {
+    @include layoutGTC($break-normal);
+  }
+
+  @include for-normal-wide-layout {
+    @include layoutGTC($break-normal-wide);
+  }
+
+  @include for-wide-layout {
+    @include layoutGTC($break-wide);
+  }
+}
+.flex {
+  display: flex;
+  &.column { flex-direction: column; }
+  &.justify-center { justify-content: center; }
+  &.align-center { align-items: center; }
+  &.wrap { flex-wrap: wrap; }
+  &.space-between { justify-content: space-between; }
+  &.space-around { justify-content: space-around; }
+  &.auto-center {
+      align-items: center;
+  }
+}
+
+.middle{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  justify-content: center;
+  text-align: center;
+}
+
+
