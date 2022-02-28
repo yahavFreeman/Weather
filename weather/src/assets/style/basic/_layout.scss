@@ -37,16 +37,10 @@
   &.space-around { justify-content: space-around; }
   &.auto-center {
       align-items: center;
+  justify-content: center;
+
   }
 }
 
-.middle{
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  justify-content: center;
-  text-align: center;
-}
 
 
